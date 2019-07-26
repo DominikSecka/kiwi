@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		480CC1E622E9855A007973C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480CC1E522E9855A007973C2 /* AppDelegate.swift */; };
+		480CC1EB22E9855A007973C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 480CC1E922E9855A007973C2 /* Main.storyboard */; };
+		480CC1ED22E9855C007973C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 480CC1EC22E9855C007973C2 /* Assets.xcassets */; };
+		480CC1F022E9855C007973C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 480CC1EE22E9855C007973C2 /* LaunchScreen.storyboard */; };
+		480CC1F922E9861F007973C2 /* FlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480CC1F822E9861F007973C2 /* FlightsViewController.swift */; };
+		480CC1FB22E98630007973C2 /* FlightsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480CC1FA22E98630007973C2 /* FlightsPresenter.swift */; };
+		480CC1FD22E98643007973C2 /* FlightsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480CC1FC22E98643007973C2 /* FlightsInteractor.swift */; };
+		480CC1FF22E98650007973C2 /* FlightsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480CC1FE22E98650007973C2 /* FlightsRouter.swift */; };
+		480CC20122E98685007973C2 /* FlightsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480CC20022E98685007973C2 /* FlightsViewProtocol.swift */; };
+		480CC20322E9873D007973C2 /* FlightsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480CC20222E9873D007973C2 /* FlightsPresenterProtocol.swift */; };
+		480CC20722E98937007973C2 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480CC20622E98937007973C2 /* Flight.swift */; };
+		480CC20922E98996007973C2 /* FlightsRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480CC20822E98996007973C2 /* FlightsRouterProtocol.swift */; };
+		480CC20B22E98A4B007973C2 /* FlightsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480CC20A22E98A4A007973C2 /* FlightsInteractorProtocol.swift */; };
+		480F491422EA75F3009AE0F6 /* GradientViewDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480F491322EA75F3009AE0F6 /* GradientViewDesignable.swift */; };
+		480F491822EA7952009AE0F6 /* URLQuertItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480F491722EA7952009AE0F6 /* URLQuertItemExtension.swift */; };
+		485D0FF022E9FD830010D71B /* FlightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485D0FEF22E9FD830010D71B /* FlightCollectionViewCell.swift */; };
+		485D0FF322EA2AB00010D71B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485D0FF222EA2AB00010D71B /* Endpoint.swift */; };
+		485D0FF522EA2E680010D71B /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485D0FF422EA2E680010D71B /* APIConstants.swift */; };
+		485D0FF822EA30120010D71B /* FlightRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485D0FF722EA30120010D71B /* FlightRequests.swift */; };
+		485D0FFA22EA30430010D71B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485D0FF922EA30430010D71B /* APIClient.swift */; };
+		485D0FFC22EA31C80010D71B /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485D0FFB22EA31C80010D71B /* HTTPMethod.swift */; };
+		485D0FFE22EA324C0010D71B /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485D0FFD22EA324C0010D71B /* APIRequest.swift */; };
+		48828E7722EA932600065867 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 48828E7622EA932600065867 /* loading.json */; };
+		48828E7922EAD66500065867 /* loading2.json in Resources */ = {isa = PBXBuildFile; fileRef = 48828E7822EAD66500065867 /* loading2.json */; };
+		AF1B7D6D06A648E4D5BB2B0C /* Pods_Kiwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F46824FD15B90F4F309786 /* Pods_Kiwi.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		480CC1E222E9855A007973C2 /* Kiwi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kiwi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		480CC1E522E9855A007973C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		480CC1EA22E9855A007973C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		480CC1EC22E9855C007973C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		480CC1EF22E9855C007973C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		480CC1F122E9855C007973C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		480CC1F822E9861F007973C2 /* FlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsViewController.swift; sourceTree = "<group>"; };
+		480CC1FA22E98630007973C2 /* FlightsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsPresenter.swift; sourceTree = "<group>"; };
+		480CC1FC22E98643007973C2 /* FlightsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsInteractor.swift; sourceTree = "<group>"; };
+		480CC1FE22E98650007973C2 /* FlightsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsRouter.swift; sourceTree = "<group>"; };
+		480CC20022E98685007973C2 /* FlightsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsViewProtocol.swift; sourceTree = "<group>"; };
+		480CC20222E9873D007973C2 /* FlightsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsPresenterProtocol.swift; sourceTree = "<group>"; };
+		480CC20622E98937007973C2 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		480CC20822E98996007973C2 /* FlightsRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsRouterProtocol.swift; sourceTree = "<group>"; };
+		480CC20A22E98A4A007973C2 /* FlightsInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsInteractorProtocol.swift; sourceTree = "<group>"; };
+		480F491322EA75F3009AE0F6 /* GradientViewDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewDesignable.swift; sourceTree = "<group>"; };
+		480F491722EA7952009AE0F6 /* URLQuertItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQuertItemExtension.swift; sourceTree = "<group>"; };
+		485D0FEF22E9FD830010D71B /* FlightCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightCollectionViewCell.swift; sourceTree = "<group>"; };
+		485D0FF222EA2AB00010D71B /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		485D0FF422EA2E680010D71B /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		485D0FF722EA30120010D71B /* FlightRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRequests.swift; sourceTree = "<group>"; };
+		485D0FF922EA30430010D71B /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		485D0FFB22EA31C80010D71B /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		485D0FFD22EA324C0010D71B /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		48828E7622EA932600065867 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		48828E7822EAD66500065867 /* loading2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading2.json; sourceTree = "<group>"; };
+		8929997B5B24CCAD8B845272 /* Pods-Kiwi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kiwi.debug.xcconfig"; path = "Target Support Files/Pods-Kiwi/Pods-Kiwi.debug.xcconfig"; sourceTree = "<group>"; };
+		B95107F0B0A49932AAE77641 /* Pods-Kiwi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kiwi.release.xcconfig"; path = "Target Support Files/Pods-Kiwi/Pods-Kiwi.release.xcconfig"; sourceTree = "<group>"; };
+		F4F46824FD15B90F4F309786 /* Pods_Kiwi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kiwi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		480CC1DF22E9855A007973C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF1B7D6D06A648E4D5BB2B0C /* Pods_Kiwi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16DC498ECBBFFE000E7E9796 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8929997B5B24CCAD8B845272 /* Pods-Kiwi.debug.xcconfig */,
+				B95107F0B0A49932AAE77641 /* Pods-Kiwi.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		480CC1D922E98559007973C2 = {
+			isa = PBXGroup;
+			children = (
+				48828E7522EA90FC00065867 /* SupportFiles */,
+				480CC1E422E9855A007973C2 /* Kiwi */,
+				480CC1E322E9855A007973C2 /* Products */,
+				16DC498ECBBFFE000E7E9796 /* Pods */,
+				4EA0CA02DD5BB39A04002BE8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		480CC1E322E9855A007973C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				480CC1E222E9855A007973C2 /* Kiwi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		480CC1E422E9855A007973C2 /* Kiwi */ = {
+			isa = PBXGroup;
+			children = (
+				480F491222EA75E3009AE0F6 /* Designable */,
+				485D0FF122EA2A6E0010D71B /* API */,
+				480CC1F722E985B4007973C2 /* FlightsModule */,
+				480CC1E522E9855A007973C2 /* AppDelegate.swift */,
+				480CC1E922E9855A007973C2 /* Main.storyboard */,
+				480CC1EC22E9855C007973C2 /* Assets.xcassets */,
+				480CC1EE22E9855C007973C2 /* LaunchScreen.storyboard */,
+				480CC1F122E9855C007973C2 /* Info.plist */,
+			);
+			path = Kiwi;
+			sourceTree = "<group>";
+		};
+		480CC1F722E985B4007973C2 /* FlightsModule */ = {
+			isa = PBXGroup;
+			children = (
+				485D0FED22E9FD5D0010D71B /* View */,
+				480CC20522E9891A007973C2 /* Model */,
+				480CC20422E98747007973C2 /* Protocol */,
+				480CC1F822E9861F007973C2 /* FlightsViewController.swift */,
+				480CC1FA22E98630007973C2 /* FlightsPresenter.swift */,
+				480CC1FC22E98643007973C2 /* FlightsInteractor.swift */,
+				480CC1FE22E98650007973C2 /* FlightsRouter.swift */,
+			);
+			path = FlightsModule;
+			sourceTree = "<group>";
+		};
+		480CC20422E98747007973C2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				480CC20022E98685007973C2 /* FlightsViewProtocol.swift */,
+				480CC20222E9873D007973C2 /* FlightsPresenterProtocol.swift */,
+				480CC20822E98996007973C2 /* FlightsRouterProtocol.swift */,
+				480CC20A22E98A4A007973C2 /* FlightsInteractorProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		480CC20522E9891A007973C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				480CC20622E98937007973C2 /* Flight.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		480F491222EA75E3009AE0F6 /* Designable */ = {
+			isa = PBXGroup;
+			children = (
+				480F491322EA75F3009AE0F6 /* GradientViewDesignable.swift */,
+			);
+			path = Designable;
+			sourceTree = "<group>";
+		};
+		480F491622EA7923009AE0F6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				480F491722EA7952009AE0F6 /* URLQuertItemExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		485D0FED22E9FD5D0010D71B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				485D0FEE22E9FD630010D71B /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		485D0FEE22E9FD630010D71B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				485D0FEF22E9FD830010D71B /* FlightCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		485D0FF122EA2A6E0010D71B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				480F491622EA7923009AE0F6 /* Extension */,
+				485D0FF622EA2FFB0010D71B /* Request */,
+				485D0FF222EA2AB00010D71B /* Endpoint.swift */,
+				485D0FF422EA2E680010D71B /* APIConstants.swift */,
+				485D0FF922EA30430010D71B /* APIClient.swift */,
+				485D0FFB22EA31C80010D71B /* HTTPMethod.swift */,
+				485D0FFD22EA324C0010D71B /* APIRequest.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		485D0FF622EA2FFB0010D71B /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				485D0FF722EA30120010D71B /* FlightRequests.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		48828E7522EA90FC00065867 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				48828E7822EAD66500065867 /* loading2.json */,
+				48828E7622EA932600065867 /* loading.json */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		4EA0CA02DD5BB39A04002BE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4F46824FD15B90F4F309786 /* Pods_Kiwi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		480CC1E122E9855A007973C2 /* Kiwi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 480CC1F422E9855C007973C2 /* Build configuration list for PBXNativeTarget "Kiwi" */;
+			buildPhases = (
+				417D14C352F6BE3449FC0DEC /* [CP] Check Pods Manifest.lock */,
+				480CC1DE22E9855A007973C2 /* Sources */,
+				480CC1DF22E9855A007973C2 /* Frameworks */,
+				480CC1E022E9855A007973C2 /* Resources */,
+				AACD979F7A034689E23869AA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kiwi;
+			productName = Kiwi;
+			productReference = 480CC1E222E9855A007973C2 /* Kiwi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		480CC1DA22E98559007973C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Dominik Secka";
+				TargetAttributes = {
+					480CC1E122E9855A007973C2 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 480CC1DD22E98559007973C2 /* Build configuration list for PBXProject "Kiwi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 480CC1D922E98559007973C2;
+			productRefGroup = 480CC1E322E9855A007973C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				480CC1E122E9855A007973C2 /* Kiwi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		480CC1E022E9855A007973C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48828E7922EAD66500065867 /* loading2.json in Resources */,
+				480CC1F022E9855C007973C2 /* LaunchScreen.storyboard in Resources */,
+				48828E7722EA932600065867 /* loading.json in Resources */,
+				480CC1ED22E9855C007973C2 /* Assets.xcassets in Resources */,
+				480CC1EB22E9855A007973C2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		417D14C352F6BE3449FC0DEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kiwi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AACD979F7A034689E23869AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kiwi/Pods-Kiwi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kiwi/Pods-Kiwi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kiwi/Pods-Kiwi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		480CC1DE22E9855A007973C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				480CC20722E98937007973C2 /* Flight.swift in Sources */,
+				480CC1FF22E98650007973C2 /* FlightsRouter.swift in Sources */,
+				480CC1F922E9861F007973C2 /* FlightsViewController.swift in Sources */,
+				480CC20B22E98A4B007973C2 /* FlightsInteractorProtocol.swift in Sources */,
+				480CC20922E98996007973C2 /* FlightsRouterProtocol.swift in Sources */,
+				480CC1FB22E98630007973C2 /* FlightsPresenter.swift in Sources */,
+				480F491422EA75F3009AE0F6 /* GradientViewDesignable.swift in Sources */,
+				485D0FF022E9FD830010D71B /* FlightCollectionViewCell.swift in Sources */,
+				480CC20322E9873D007973C2 /* FlightsPresenterProtocol.swift in Sources */,
+				485D0FF522EA2E680010D71B /* APIConstants.swift in Sources */,
+				480CC20122E98685007973C2 /* FlightsViewProtocol.swift in Sources */,
+				480CC1FD22E98643007973C2 /* FlightsInteractor.swift in Sources */,
+				485D0FFC22EA31C80010D71B /* HTTPMethod.swift in Sources */,
+				480CC1E622E9855A007973C2 /* AppDelegate.swift in Sources */,
+				480F491822EA7952009AE0F6 /* URLQuertItemExtension.swift in Sources */,
+				485D0FF322EA2AB00010D71B /* Endpoint.swift in Sources */,
+				485D0FFA22EA30430010D71B /* APIClient.swift in Sources */,
+				485D0FFE22EA324C0010D71B /* APIRequest.swift in Sources */,
+				485D0FF822EA30120010D71B /* FlightRequests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		480CC1E922E9855A007973C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				480CC1EA22E9855A007973C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		480CC1EE22E9855C007973C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				480CC1EF22E9855C007973C2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		480CC1F222E9855C007973C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		480CC1F322E9855C007973C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		480CC1F522E9855C007973C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8929997B5B24CCAD8B845272 /* Pods-Kiwi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54AN87C2MD;
+				INFOPLIST_FILE = Kiwi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.secka.Fairgrade.Kiwi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		480CC1F622E9855C007973C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B95107F0B0A49932AAE77641 /* Pods-Kiwi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54AN87C2MD;
+				INFOPLIST_FILE = Kiwi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.secka.Fairgrade.Kiwi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		480CC1DD22E98559007973C2 /* Build configuration list for PBXProject "Kiwi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				480CC1F222E9855C007973C2 /* Debug */,
+				480CC1F322E9855C007973C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		480CC1F422E9855C007973C2 /* Build configuration list for PBXNativeTarget "Kiwi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				480CC1F522E9855C007973C2 /* Debug */,
+				480CC1F622E9855C007973C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 480CC1DA22E98559007973C2 /* Project object */;
+}
